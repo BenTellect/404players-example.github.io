@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">.body{margin:0;padding:0;border:0;background:#000;}</style>
+  </head>
+  <body>
+  	<div
+  		id="cinemaplayer"
+  		data-cinemaplayer-tabs-top="15px"
+	    data-cinemaplayer-tabs-left="15px"
+	    data-cinemaplayer-tabs-right=""
+  	></div>
+    <script>
+    	var id = 'tt' + window.location.pathname.replace(/[^0-9]/ig, '');
+    	var player = document.getElementById('cinemaplayer');
+    	player.setAttribute(
+    		'data-cinemaplayer-api',
+    		'https://404players.gitlab.io/api/' + id + '.json'
+    	);
+    	var js = document.createElement('script');
+	    js.type = 'text/javascript';
+	    js.src = '/404players.js';
+	    document.body.appendChild(js);
+	    document.title = id;
+    </script>
+  </body>
+</html>
