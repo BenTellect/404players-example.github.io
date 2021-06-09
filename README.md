@@ -11,7 +11,7 @@
 
 ### Use your own server as a JSON repository!
 
-- Bash file: <a href="https://github.com/404players/404players.github.io/blob/main/404players.sh">404players.sh</a>
+- Bash file: <a href="https://github.com/404players-example/404players-example.github.io/blob/main/404players.sh">404players.sh</a>
 - Command: `404players.sh "GomoKEY"`
 
 #### Dev by ❤️ for 🌎
